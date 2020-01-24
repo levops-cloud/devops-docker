@@ -13,9 +13,12 @@ java -cp target/helloworld-1.0-SNAPSHOT.jar org.examples.java.App
 exit
 ```
 
-### Run
+### Build + Run
 ```
 docker image build -t hello-java:latest .
 docker container run hello-java:latest
 
 ```
+
+### With Docker builder
+docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v `pwd`/source:/app docker:latest sh
