@@ -1,5 +1,5 @@
 # Create your first image
 
 ```
-docker image build . -t helloworld
+docker build . -t helloworld
 ```
